@@ -66,7 +66,7 @@
         .right-menu {
             position: absolute;
             right: 20px;
-            top: 20px;
+            top: 42px;
             display: flex;
             align-items: center;
         }
@@ -84,36 +84,24 @@
         }
 
         .right-menu button {
-            padding: 10px 20px;
+            padding: 10px 15px;
             font-size: 18px;
-            background-color: #28a745;
-            color: #fff;
+            background-color: #fff;
+            color: #0a7db4;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
+            font-weight: 700;
             margin-left: 20px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .right-menu button:hover {
-            background-color: #218838;
-        }
-
-        /* Container for the main form */
-        .form-container {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: left;
-        }
-
-        /* Apply Cairo font to all labels in the form */
-        .form-container label {
-            font-family: 'Cairo', sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-            font-variation-settings: "slnt" 0;
+            background-color: #d9e8ee;
         }
     </style>
 </head>
@@ -125,14 +113,6 @@
         <label>Laser Tag Game</label>
     </div>
 
-    <div class="form-container">
-        <h1>Enter Game Number</h1>
-        <div class="form-group">
-            <label for="gameNumber">Game Number</label>
-            <input type="text" id="gameNumber" placeholder="Enter Game Number">
-        </div>
-        <button class="btn" onclick="retrieveGame()">Start Game</button>
-    </div>
 
     <!-- Right-side menu with labels and button -->
     <div class="right-menu">
