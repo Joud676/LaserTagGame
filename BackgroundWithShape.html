@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Game Number</title>
+    <!-- Import Cairo font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+            /* Apply Cairo font with custom settings */
+
+            /* Background image */
+            background-image: url('Background.png');
+            background-size: 100vw 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        /* Header container for the logo and title */
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            width: 80px;
+            /* Increased logo size */
+            height: 80px;
+            /* Increased logo size */
+            margin-right: 10px;
+        }
+
+        .header label {
+            font-size: 20px;
+            /* Reduced font size */
+            font-weight: bold;
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+        }
+
+        /* Styling for the right-side menu */
+        .right-menu {
+            position: absolute;
+            right: 20px;
+            top: 42px;
+            display: flex;
+            align-items: center;
+        }
+
+        .right-menu label {
+            font-size: 18px;
+            margin: 0 15px;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'Cairo', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+        }
+
+        .right-menu button {
+            padding: 10px 15px;
+            font-size: 18px;
+            background-color: #fff;
+            color: #0a7db4;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
+        .right-menu button:hover {
+            background-color: #d9e8ee;
+        }
+
+        /* New style for the center-right shape */
+        .center-right-shape {
+            position: absolute;
+            right: 80px;
+            /* 10px from the right side of the screen */
+            top: 50%;
+            /* Vertically centered */
+            transform: translateY(-50%);
+            /* Fine-tune vertical centering */
+            width: 450px;
+            /* Width of the shape */
+            height: 420px;
+            /* Height of the shape */
+            background-color: white;
+            /* White background */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            /* Shadow around all sides */
+            padding: 20px;
+            /* Add padding inside the box */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+        <label>Laser Tag Game</label>
+    </div>
+
+    <!-- The new center-right shape with form inside -->
+    <div class="center-right-shape">
+
+    </div>
+
+    <!-- Right-side menu with labels and button -->
+    <div class="right-menu">
+        <label>Home</label>
+        <label>Play Now</label>
+        <label>Results</label>
+        <button>Register</button>
+    </div>
+
+</body>
+
+</html>
